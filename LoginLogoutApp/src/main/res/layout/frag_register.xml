@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:height="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="165dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:height="0dp" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:hint="Passwort"
+            android:inputType="textPassword"
+            android:id="@+id/editPw"
+            android:layout_below="@+id/editEmail"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15dp">
+        </EditText>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:hint="Name"
+            android:id="@+id/editPw"
+            android:layout_above="@+id/editPw"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="false">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:hint="E-Mail"
+            android:padding="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editPw"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15dp"></EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:height="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:id="@+id/relativeLayout" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</LinearLayout>
